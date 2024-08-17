@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel = "icon" href="img/Titulo.png">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo"> <strong>alura</strong></a>
+        <a class="logo2">LATAM</a>
+
+    </header>
+
+    <main>
+
+        <section class="cuadro__encriptador">
+            <textarea class="encripta" placeholder="Ingrese el texto a aquí"></textarea>
+            <div class="alerta__error">
+                <p class="texto__alerta"> &#128512 Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones__cuadro__encriptador">
+                <button type="submit" class="boton__encriptar"> Encriptar </button>
+                <button type="submit" class="boton__desencriptar">Desencriptar</button>
+            </div>
+
+        </section>
+
+        <section class="cuadro__texto__encriptado">
+            <div class="cuadro__texto">
+                <img src="img/Muñeco.png" class="imagen__muñeco">
+                <p class="texto__muñeco"> <strong> Ningún mensaje fue encontrado</strong></p>
+                <p class="texto__usuario">Ingrese el texto que desee encriptar o desencriptar.</p>
+            </div>
+            <textarea type="mensaje" class="area__texto" readonly></textarea>
+            <button type="submit" class="copiar__texto">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p class="pie">@ Encriptador de Texto - Desarollado por MEV</p>
+
+    </footer>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

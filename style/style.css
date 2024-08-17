@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --color-primario: black;
+    --color-secundario: rgb(242, 242, 245);
+    --color-terciario: #f6f6f6;
+    --color-cuarto: rgba(180, 172, 172, 0.644);
+    --color-rgba: rgba(48, 197, 202, 0.911);
+
+
+    --fuente-roboto: "roboto mono ", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-krona);
+    text-decoration: none;
+    
+
+
+}
+
+body{
+    box-sizing: border-box;
+    background: url(../img/Fondo.png) no-repeat;
+    background-color: var(--color-primario);
+    background-size: cover;
+    background-position: center;
+}
+
+img{
+    max-width: 100%;
+    
+}
+
+header{
+    justify-content: flex-start;
+    margin: 20px 0px 0px 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-start;
+    color: var(--color-terciario);
+    font-size: 30px;
+}
+
+.logo2{
+    display: flex;
+    align-items: flex-start;
+    color: var(--color-terciario);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    background-position: center;
+
+}
+
+    
+
+.cuadro__encriptador{
+    width: 50%;
+    margin: 100px 150px 75px 150px;
+
+
+}
+
+.encripta{
+    width: 750px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 50px;
+    border: 1px solid var(--color-terciario);
+    border-radius: 15px;
+    resize: none;
+    background: var(--color-cuarto);
+    box-shadow: 10px 24px 32px -8px var(--color-cuarto);
+}
+
+.encripta::placeholder, :focus {
+    color: var(--color-secundario);
+    font-family: var(--fuente-roboto);
+    
+}
+
+.alerta__error{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0px 35px 0px;
+    color: var(--color-terciario);
+
+}
+
+.texto__alerta{
+width: 100%;
+flex-direction: column;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+color: var(--color-terciario);
+
+}
+
+.botones__cuadro__encriptador{
+    margin: 20px auto;
+}
+
+.boton__encriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-terciario);
+    background: var(--color-cuarto);
+    border: 1px solid var(--color-terciario);
+    border-radius: 24px;
+    box-shadow: 0px 20px 29px -5px color var(--color-rgba);
+    font-style: var(--fuente-krona);
+    cursor: pointer;
+}
+
+.boton__encriptar:active{
+    box-shadow: inset 2px 2px 4px var(--color-rgba),
+    inset -3px -4px 8px var(--color-terciario);
+    color: var(--color-rgba);
+
+}
+
+.boton__desencriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-terciario);
+    background: var(--color-cuarto);
+    border: 1px solid var(--color-terciario);
+    border-radius: 24px;
+    box-shadow: 0px 20px 29px -5px color var(--color-rgba);
+    font-style: normal;
+    cursor: pointer;
+}
+.boton__desencriptar:active{
+    box-shadow: inset 2px 2px 4px var(--color-rgba),
+    inset -3px -4px 8px var(--color-terciario);
+    color: var(--color-rgba);
+
+}
+
+
+.cuadro__texto__encriptado{
+    width: 270px;
+    height: 540px;
+    background: var(--color-cuarto);
+    border: 1px solid var(--color-terciario);
+    box-shadow: 10px 24px 32px -8px var(--color-cuarto);
+    position: relative;
+    margin-top: 10px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.cuadro__texto{
+    width: 250px;
+    margin: auto;
+    margin-top: 5%;
+    background: transparent;
+}
+
+
+.imagen__muñeco{
+    background: transparent;
+}
+
+.texto__muñeco{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 170%;
+    text-align: center;
+    color: var(--color-terciario);
+    
+}
+
+.texto__usuario{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-terciario);
+}
+
+.area__texto{
+    width:85% ;
+    height: 405px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-terciario);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.area__texto:focus{
+outline: none;
+}
+
+.copiar__texto{
+    color: var(--color-terciario);
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: var(--color-cuarto);
+    border: 1px solid var(--color-terciario);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.copiar__texto:active{
+    box-shadow: inset 2px 2px 4px var(--color-rgbad),
+    inset -3px -4px 8px var(--color-terciario);
+    color: var(--color-rgba);
+}
+
+footer{
+    margin-top:150px;
+    padding: 10px;
+    
+
+}
+
+.pie{
+    margin: -200px;
+    color: var(--color-terciario);
+    text-align: center;
+}
+
+@media(max-width:720px){
+    .logo{
+        width: 100%;
+        padding: 4px;
+    }
+
+    .cuadro__encriptador{  
+        display: grid;
+        gap: 21px;
+        margin: 168px 0px 0px 0px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+    .encripta{
+        width: 85%;
+        font-size: 24px;
+        
+    }
+        .area__texto{
+        width:100% ;
+        height: 50px;
+        position: flex;
+        padding: 20px;
+    } 
+
+    footer{
+        margin-top:0px;
+        padding: 150px;
+    }
+    
+
+    .texto__alerta{
+        margin: 15px;
+        font-size: 15px;
+        position: static;
+    }
+
+    .botones__cuadro__encriptador{
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+    } 
+}
+
+@media(max-width: 1300px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .cuadro__encriptador{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .encripta{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+    .alerta__error{
+        position: inherit;
+        margin: auto;
+        font-size: 15px;
+    }
+    .pie{
+    font-size:15px;
+        display: grid;
+        margin: -100px;
+}
+.logo{
+    width: 100%;
+    padding: 2px;
+}
+}
+
+
